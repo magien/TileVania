@@ -8,12 +8,29 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D myRigidBody;
     void Start()
     {
-        myRigidBody.GetComponent<Rigidbody2D>();
+        myRigidBody = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
-        
+        myRigidBody.velocity = new Vector2(moveSpeed, 0f);
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        moveSpeed = -moveSpeed;
+        FlipEnemyFacing();
+    }
+
+    void FlipEnemyFacing()
+    {
+        bool enemyHasHorizontalSpeed = Mathf.Abs(moveSpeed) > Mathf.Epsilon;
+        if (enemyHasHorizontalSpeed)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(moveSpeed), 1f);
+        }
+    }
+
+    
 }
