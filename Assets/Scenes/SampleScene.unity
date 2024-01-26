@@ -78234,7 +78234,7 @@ GameObject:
   - component: {fileID: 1250399644}
   m_Layer: 11
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79745,18 +79745,6 @@ PrefabInstance:
     - target: {fileID: 1890663303605819757, guid: 106e7154946b853439c280ad43db981f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2605270844163930933, guid: 106e7154946b853439c280ad43db981f, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 7d9d4e3252cfdb8429c328be023ed17c, type: 2}
-    - target: {fileID: 6078608324120260080, guid: 106e7154946b853439c280ad43db981f, type: 3}
-      propertyPath: deathKick.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6078608324120260080, guid: 106e7154946b853439c280ad43db981f, type: 3}
-      propertyPath: deathKick.y
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
