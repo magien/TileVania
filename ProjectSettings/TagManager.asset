@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Exit
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Enemies
   - Hazards
   - Bullets
-  - 
+  - Interact
   - 
   - 
   - 
@@ -56,6 +57,9 @@ TagManager:
     locked: 0
   - name: Hazards
     uniqueID: 2772047827
+    locked: 0
+  - name: Interact
+    uniqueID: 2163300273
     locked: 0
   - name: Enemy
     uniqueID: 3363128453
